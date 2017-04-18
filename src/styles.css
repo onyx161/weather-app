@@ -50,11 +50,13 @@ header {
   width: 40%;
   text-align: center;
 }
+.weather-search form { margin-bottom: 15px }
 .weather-search label {
   font-weight: bold;
   margin-right: 20px;
 }
-.weather-search button, .weather-search input {
+.weather-search button, 
+.weather-search input {
   font-size: inherit;
   font-family: inherit;
 }
@@ -122,7 +124,7 @@ button:hover {
 }
 .profile h4 {
   margin: 0;
-  paddin: 0;
+  padding: 0;
 }
 .profile p {
   margin: 0;
