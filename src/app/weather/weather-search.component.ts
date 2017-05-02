@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms/forms';
+import { Subject } from 'rxjs/Subject';
 
 import { WeatherItem } from './weather-item';
 import { WeatherService } from './weather.service';
-import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'wa-weather-search',

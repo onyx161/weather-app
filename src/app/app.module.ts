@@ -7,9 +7,9 @@ import { AppComponent } from './app.component';
 import { WeatherListComponent } from './weather/weather-list.component';
 import { WeatherItemComponent } from './weather/weather-item.component';
 import { WeatherSearchComponent } from './weather/weather-search.component';
-import { SidebarComponent } from './sidebar.component';
-import { WeatherService } from 'app/weather/weather.service';
-import { ProfileService } from 'app/profile.service';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { WeatherService } from './weather/weather.service';
+import { ProfileService } from './sidebar/profile.service';
 
 @NgModule({
   declarations: [

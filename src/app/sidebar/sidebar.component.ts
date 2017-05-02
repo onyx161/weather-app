@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { WeatherService } from 'app/weather/weather.service';
-import { WeatherItem } from 'app/weather/weather-item';
-import { ProfileService } from "app/profile.service";
-import { Profile } from "app/profile";
+import { WeatherService } from '../weather/weather.service';
+import { WeatherItem } from '../weather/weather-item';
+import { ProfileService } from './profile.service';
+import { Profile } from './profile';
 
 @Component({
   selector: 'wa-sidebar',
@@ -37,10 +37,10 @@ export class SidebarComponent implements OnInit {
       this._weatherService.searchWeatherData(profile.cities[i])
         .retry()
         .subscribe(
-        data => {
-          const weatherItem = new WeatherItem(data.name, data.weather[0].description, data.main.temp);
-          this._weatherService.addWeatherItem(weatherItem);
-        }
+          data => {
+            const weatherItem = new WeatherItem(data.name, data.weather[0].description, data.main.temp);
+            this._weatherService.addWeatherItem(weatherItem);
+          }
         );
     }
   }
